@@ -1,0 +1,35 @@
+body{
+  margin:auto;
+
+}
+
+.blocks{
+  display:inline-block
+}
+
+.blocks p{
+  display:inline;
+}
+
+.blocks  a{
+    margin: auto;
+    padding: 3px;
+}
+
+.game {
+  margin:auto;
+  padding-bottom:20px;
+  text-align: center;
+}
+
+
+
+.top {
+  text-align: : center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.botton a{
+  padding: 20px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tetris</title>
+        <link rel='stylesheet' href='style.css' />
+    </head>
+    <body onload="draw1()">
+        <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+      <div class="game">
+        <canvas width='260' height='390'></canvas>
+        <div class="blocks">
+          <div class="cyan">
+            <a href="javascript:void(0);"  onclick="keyPress('cyan');"><img src="block/cyanblocks.svg"></a>
+            <p>×</p><p id="cyan">0</p>
+          </div>
+          <div class="orange">
+            <a href="javascript:void(0);"onclick="keyPress('orange');"><img src="block/orangeblocks.svg"></a>
+            <p>×</p><p id='orange'>0</p>
+          </div>
+          <div class="blue">
+            <a href="javascript:void(0);" onclick="keyPress('blue');"><img src="block/blueblocks.svg"></a>
+            <p>×</p><p id='blue'>0</p>
+          </div>
+          <div class="yellow">
+            <a href="javascript:void(0);" onclick="keyPress('yellow');"><img src="block/yellowblocks.svg"></a>
+            <p>×</p><p id='yellow'>0</p>
+          </div>
+          <div class="red">
+            <a href="javascript:void(0);" onclick="keyPress('red');"><img src="block/redblocks.svg"></a>
+            <p>×</p><p id='red'>0</p>
+          </div>
+          <div class="green">
+            <a href="javascript:void(0);" onclick="keyPress('green');"><img src="block/greenblocks.svg"></a>
+            <p>×</p><p id='green'>0</p>
+          </div>
+          <div class="purple">
+            <a href="javascript:void(0);" onclick="keyPress('purple');"><img src="block/purpleblocks.svg"></a>
+            <p>×</p><p id='purple'>0</p>
+          </div>
+        </div>
+        <div class="botton">
+          <div class="top">
+            <a href="javascript:void(0);" onclick="keyPress('enter');"><img src="botton/enter.png"></a>
+            <a href="javascript:void(0);" onclick="keyPress('up');"><img src="botton/up.png"></a>
+            <a href="javascript:void(0);" onclick="keyPress('rotate');"><img src="botton/rotation.png"></a>
+          </div>
+          <div class="bottom">
+            <a href="javascript:void(0);" onclick="keyPress('left');"><img src="botton/left.png"></a>
+            <a href="javascript:void(0);" onclick="keyPress('down');"><img src="botton/down.png"></a>
+            <a href="javascript:void(0);" onclick="keyPress('right');"><img src="botton/right.png"></a>
+          </div>
+        </div>
+      </div>
+      <script src='js/tetris3.js'></script>
+      <script src='js/controller.js'></script>
+    　<script src='js/render2.js'></script>
+    </body>
+</html>
